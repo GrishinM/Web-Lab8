@@ -28,12 +28,10 @@ header {
 
 main {
     padding: 20px;
-    position: relative;
 }
 
 footer {
     background: gray;
-    position: absolute;
 }
 
 .footer-container {

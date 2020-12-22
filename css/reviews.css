@@ -1,0 +1,34 @@
+.review-rate-img{
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 50px;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 1px solid black;
+}
+
+.review-description {
+    display: flex;
+    flex-direction: column;
+    border-left: black solid 1px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.review-author {
+    font-size: x-large;
+}
+
+.review-text {
+    padding-top: 5px;
+}

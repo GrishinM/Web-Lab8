@@ -1,13 +1,13 @@
 let url = window.location.search;
 let urlParams = new URLSearchParams(url);
-let p = document.createElement("p");
 let carId = urlParams.get("id");
-p.textContent = carId;
+
 window.onload = function() {
-    let main = document.getElementsByTagName("main")[0];
-    main.appendChild(p);
+    let main = document.querySelector("main");
+    let header = document.querySelector("header");
+    main.style.paddingTop += header.offsetHeight.toString() + "px";
+    let content = document.querySelector(".car-details");
     let currentCar = cars.find(k => k.id == carId);
-    let img = document.createElement("img");
-    img.src = "../" + currentCar.imgSrc;
-    main.appendChild(img);
+    let res = currentCar.toDetailedHTML("../");
+    content.appendChild(res);
 }

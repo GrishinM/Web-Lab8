@@ -1,0 +1,37 @@
+.sale-item {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    border: 2px solid grey;
+}
+
+.sale-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.sale-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+}
+
+.sale-description {
+    font-size: x-large;
+    padding: 10px;
+}
+
+.sales-container {
+    width: 75%;
+}
+
+.sale-name {
+    font-size: xx-large;
+    padding: 10px;
+}
+
+.sale-date {
+    font-weight: bold;
+    padding: 10px;
+}

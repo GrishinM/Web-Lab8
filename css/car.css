@@ -2,3 +2,59 @@
     max-width: 750px;
     max-height: 750px;
 }
+
+.car-details {
+    width: 50%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.details-name {
+    font-size: xx-large;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.details-price {
+    font-size: x-large;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.details-text {
+    font-size: x-large;
+    padding: 10px;
+}
+.details-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-striped {
+    font-size: x-large;
+}
+
+.table-row-value {
+    text-align: center;
+    font-weight: bold;
+}
+
+.table-row-name {
+    padding: 5px;
+}
+
+.table-striped>tbody>tr>td {
+    border-top: 1px solid grey;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}

@@ -23,28 +23,30 @@ class Car {
         this.country = country;
     }
 
-    toPreviewHtml(path = "") {
+    toPreviewHTML(path = "") {
+        let img = document.createElement("img")
+        img.classList.add("car-img")
+        img.src = path + this.imgSrc
+
         let link = document.createElement("a");
         link.href = "common/car.html?id=" + this.id;
-        let img = document.createElement("img")
-        img.classList.add("car-photo")
-        img.src = path + this.imgSrc
         link.appendChild(img);
+
         let price = document.createElement("p")
         price.classList.add("car-price")
         price.textContent = this.price + " ₽"
-        link.appendChild(price);
+
         let name = document.createElement("p")
         name.classList.add("car-name")
         name.textContent = this.name
-        link.appendChild(name);
+
         let div = document.createElement("div")
         div.classList.add("car-container")
-        div.appendChild(link);
+        div.append(link, price, name);
         return div
     }
 
-    toDetailedHTML(path = ""){
+    toDetailedHTML(path = "") {
         let img = document.createElement("img")
         img.classList.add("car-detailed-photo")
         img.src = path + this.imgSrc
@@ -57,10 +59,9 @@ class Car {
         name.classList.add("details-name")
         name.textContent = this.name
 
-        let carText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
         let pText = document.createElement("p");
         pText.classList.add("details-text");
-        pText.textContent = carText;
+        pText.textContent = this.description;
 
         let description = document.createElement("div");
         description.classList.add("details-description");
@@ -82,31 +83,31 @@ class Car {
         return div
     }
 
-    getDetailsTable()
-    {
-        let table = document.createElement("table");
-        table.classList.add("table-striped");
+    getDetailsTable() {
         let tbody = document.createElement("tbody");
         tbody.appendChild(this.getDetailTableRow("Длина", this.length));
         tbody.appendChild(this.getDetailTableRow("Ширина", this.width));
         tbody.appendChild(this.getDetailTableRow("Высота", this.height));
         tbody.appendChild(this.getDetailTableRow("Кол-во мест", this.seatCount));
         tbody.appendChild(this.getDetailTableRow("Страна сборки", this.country));
+
+        let table = document.createElement("table");
+        table.classList.add("table-striped");
         table.appendChild(tbody);
         return table;
     }
 
-    getDetailTableRow(name, value)
-    {
-        let row = document.createElement("tr");
+    getDetailTableRow(name, value) {
         let nameColumn = document.createElement("td");
         nameColumn.classList.add("table-row-name");
         nameColumn.textContent = name;
+
         let valueColumn = document.createElement("td");
         valueColumn.classList.add("table-row-value");
         valueColumn.textContent = value;
-        row.appendChild(nameColumn);
-        row.appendChild(valueColumn);
+
+        let row = document.createElement("tr");
+        row.append(nameColumn, valueColumn);
         return row;
     }
 }

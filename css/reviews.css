@@ -1,26 +1,22 @@
-.review-rate-img{
+.review-rate-img {
     max-width: 500px;
+    object-fit: contain;
 }
 
 .reviews-container {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding-top: 50px;
+    width: 60%;
+    padding: 50px;
 }
 
 .review-container {
     display: flex;
     flex-direction: row;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin: 15px;
     border: 1px solid black;
 }
 
-.review-container:hover {
-    background-color: lightblue;
-    border-width: 2px;
-}
 .review-description {
     display: flex;
     flex-direction: column;

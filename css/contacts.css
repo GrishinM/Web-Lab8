@@ -1,0 +1,86 @@
+.contacts-container {
+    width: 50%;
+    padding: 50px;
+}
+
+.contacts-container div {
+    font-size: 20px;
+}
+
+h1 {
+    margin: 0 0 30px;
+}
+
+h3, p {
+    margin: 15px 0;
+}
+
+.feedback-button {
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+    font-size: 120%;
+}
+
+.feedback-button:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+span {
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.big-map {
+    height: 600px;
+    width: 800px;
+}
+
+.popup {
+    position: fixed;
+    margin-top: 100px;
+    left: 0;
+    right: 0;
+    width: 30%;
+    padding: 30px;
+    border: 3px solid;
+    background-color: white;
+    opacity: 100%;
+    z-index: 100;
+    font-size: 120%;
+}
+
+.popup-hidden {
+    display: none;
+}
+
+textarea {
+    border: 1px solid;
+    resize: none;
+    padding: 10px;
+}
+
+.send-button {
+    margin: 20px 0;
+    font-size: 130%;
+    padding: 5px;
+    background: blanchedalmond;
+    border: 2px solid inherit;
+    border-radius: 15px;
+}
+
+.shader {
+}
+
+.shader-active {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .3);
+    height: 100%;
+    width: 100%;
+}

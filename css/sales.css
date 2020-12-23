@@ -17,6 +17,10 @@
     border-bottom: 2px solid grey;
 }
 
+.sale-img{
+    object-fit: contain;
+}
+
 .sale-description {
     font-size: x-large;
     padding: 10px;
@@ -33,5 +37,5 @@
 
 .sale-date {
     font-weight: bold;
-    padding: 10px;
+    margin: 10px 5px 0;
 }

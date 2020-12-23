@@ -2,11 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/contacts.css">
 </head>
 <body>
+    <div class="shader"></div>
+    <div class="center popup popup-hidden">
+        <label>
+            <p>Ваше имя:</p>
+            <textarea rows="1" cols="50" maxlength="50"></textarea>
+        </label>
+        <label>
+            <p>Сообщение:</p>
+            <textarea rows="10" cols="70"></textarea>
+        </label>
+        <button class="center send-button">Отправить</button>
+    </div>
     <header>
         <div class="center header-container">
             <a href="../index.html">
@@ -24,23 +37,40 @@
         </div>
     </header>
     <main id="begin">
-
+        <div class="center contacts-container">
+            <h1>Контактная информация</h1>
+            <div>
+                <h3>
+                    Телефон: <span>81234567890</span>
+                </h3>
+                <h3>
+                    Почта: <span>so@itmo.ru</span>
+                </h3>
+                <p>Обработка заказов с 11:00 до 20:00 ежедневно</p>
+                <p class="feedback-button">Обратная связь</p>
+            </div>
+            <hr>
+            <iframe class="big-map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5649.909238889797!2d30.305115356296643!3d59.956289839589076!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x630ff799025ac60a!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQmNCi0JzQng!5e0!3m2!1sru!2sru!4v1608720250296!5m2!1sru!2sru">
+            </iframe>
+        </div>
     </main>
     <footer>
         <div class="center footer-container">
             <div>
                 <p>Написать нам:</p>
-                <a href="mailto:grishin.miha@yandex.ru">
+                <a href="mailto:so@itmo.ru">
                     <img class="email" src="../images/email.png" alt="">
                 </a>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1187.7160097270134!2d30.308667418543358!3d59.95715742946849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963141499f00b9%3A0x630ff799025ac60a!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQmNCi0JzQng!5e0!3m2!1sru!2sru!4v1608375797039!5m2!1sru!2sru"
-                    width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1187.7160097270134!2d30.308667418543358!3d59.95715742946849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963141499f00b9%3A0x630ff799025ac60a!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQmNCi0JzQng!5e0!3m2!1sru!2sru!4v1608375797039!5m2!1sru!2sru">
+            </iframe>
         </div>
     </footer>
     <a href="#begin">
         <img class="scroll-button" src="../images/scroll.png" alt="">
     </a>
+    <script src="../js/contacts.js"></script>
     <script src="../js/default.js"></script>
 </body>
 </html>

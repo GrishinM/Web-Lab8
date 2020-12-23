@@ -13,8 +13,6 @@ let reviews = [
 ]
 
 window.onload = function(){
-    let main = document.querySelector("main");
-    main.style.paddingTop += header.offsetHeight.toString() + "px";
     let container = document.querySelector(".reviews-container")
     reviews.forEach(review => container.appendChild(review.ToHTMLString()))
 }
